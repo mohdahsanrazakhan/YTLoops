@@ -1,0 +1,63 @@
+body {
+  background-color: #142228; /* Pitch Black */
+}
+
+/* Container for the slider */
+.slider-container {
+  width: 100%;
+  max-width: 600px; /* Adjust based on your layout */
+  margin: auto;
+  padding: 20px;
+  background-color: #282828; /* Dark background */
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Label styling */
+.slider-label {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Slider (the whole component) */
+.slider {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Track (background part of the slider) */
+.slider-track {
+  background: #555; /* Gray track background */
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Handle (thumb of the slider) */
+.slider-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #3498db; /* Blue thumb */
+  border-radius: 50%;
+  border: 2px solid #2980b9; /* Thumb border */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Thumb hover effect */
+.slider-thumb:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: scale(1.1); /* Slightly enlarge the thumb */
+}
+
+/* Thumb active effect (when pressed) */
+.slider-thumb:active {
+  background-color: #1c6ea4; /* Even darker blue on press */
+}
+
+/* Track when thumb is moving (active track color) */
+.slider-track.slider-track-1 {
+  background: #3498db; /* Active track color when slider is in use */
+}
